@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Blur Menu-Example 1</title>
+<style>
+body{
+ background-image:url(images/road.jpg);
+	color: #fff;
+	font-family:  Arial, sans-serif;
+	font-size: 13px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;	
+}
+.content{
+  position:relative;
+  width: 550px;
+  margin: 0 auto;	
+  margin-top:50px;
+}
+.bmenu{
+   padding: 0px;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.bmenu li{
+    font-size: 40px;
+    display: block;
+    line-height: 66px;
+}
+.bmenu li a{
+     display: block;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 2px #eeb213;
+    color: #eeb213;
+    padding: 5px 20px;
+    margin: 2px;
+    background: rgba(0,0,0,0.7);
+    letter-spacing: 1px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.bmenu:hover li a{
+    text-shadow: 0px 0px 10px #eeb213;
+    color: transparent;
+    background: rgba(0,0,0,0.2);
+}
+.bmenu li a:hover{
+    background: rgba(0,0,0,1.0);
+    text-shadow: 0px 0px 1px #eeb213;
+}
+
+.bmenu li a:link{
+
+	text-decoration:none;
+}
+header{
+   margin-left:25px;
+   margin-top:25px;	
+}
+.hd-big{
+   color: white;
+   font-size: 30px;	
+}
+.hd-medium{
+   color: white;
+   font-size: 18px;	
+}
+ul#navlist
+{
+margin-left: 0;
+padding-left: 0;
+white-space: nowrap;
+}
+
+#navlist li
+{
+display: inline;
+list-style-type: none;
+}
+
+#navlist a { padding: 3px 10px; }
+
+#navlist a:link, #navlist a:visited
+{
+color: #fff;
+background-color: #000;
+text-decoration: none;
+}
+
+#navlist a:hover
+{
+color: #fff;
+background-color: #369;
+text-decoration: none;
+}
+.active {
+  color: white !important;
+  font-weight: bold !important;
+}
+</style>
+</head>
+
+<body>
+<header>
+   <span class="hd-big">Blur Menu</span>
+   <span class="hd-medium">with CSS3 Transitions<span>
+</header>
+<div class="content">
+   <ul class="bmenu">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Illustrations</a></li>
+    <li><a href="#">Photography</a></li>
+    <li><a href="#">Web Design</a></li>
+    <li><a href="#">Personal Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  
+  <div id="navcontainer">
+      <ul id="navlist">
+      <li><a href="example1.html">Example 1</a></li>
+      <li><a href="example2.html">Example 2</a></li>
+      <li><a href="example3.html">Example 3</a></li>
+      <li class="active">Example 4</li>
+      </ul>
+  </div>
+</div>
+</body>
+</html>
